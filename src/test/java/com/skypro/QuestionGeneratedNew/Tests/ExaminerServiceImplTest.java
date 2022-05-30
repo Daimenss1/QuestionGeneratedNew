@@ -1,5 +1,6 @@
 package com.skypro.QuestionGeneratedNew.Tests;
 
+import com.skypro.QuestionGeneratedNew.Service.Impl.ExaminerServiceImpl;
 import com.skypro.QuestionGeneratedNew.Service.QuestionService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,7 +19,7 @@ class ExaminerServiceImplTest {
     QuestionService mock;
 
     @InjectMocks
-    ExaminerServiceImplTest out;
+    ExaminerServiceImpl out;
 
     @Test
     public void getQuestionsTest() {

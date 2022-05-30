@@ -1,6 +1,6 @@
 package com.skypro.QuestionGeneratedNew.Service.Impl;
 
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.skypro.QuestionGeneratedNew.Model.Exception.InvalidExamAmountException;
 import com.skypro.QuestionGeneratedNew.Model.Question;
@@ -17,7 +17,7 @@ import java.util.Set;
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
 
-    private static final Logger log = (Logger) LoggerFactory.getLogger(ExaminerServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(ExaminerServiceImpl.class);
 
     private final QuestionService questionService;
 

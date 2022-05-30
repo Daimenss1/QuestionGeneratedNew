@@ -4,6 +4,7 @@ import com.skypro.QuestionGeneratedNew.Model.Question;
 import com.skypro.QuestionGeneratedNew.Service.QuestionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
@@ -20,11 +21,11 @@ public class JavaQuestionController {
         this.service = service;
     }
     @GetMapping("/add")
-    public boolean add(String question, String answer) {
+    public boolean add(@RequestParam String question, @RequestParam String answer) {
         return service.add(question, answer);
     }
     @GetMapping("/remove")
-    public boolean remove(String question, String answer) {
+    public boolean remove(@RequestParam String question,@RequestParam String answer) {
         return service.remove(question, answer);
     }
     @GetMapping()
